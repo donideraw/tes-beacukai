@@ -34,7 +34,7 @@ public class ExcelHelper {
         try {
             Workbook workbook = new XSSFWorkbook(is);
 
-            Sheet sheet = workbook.getSheet(SHEET);
+            Sheet sheet = workbook.getSheetAt(0);
             Iterator<Row> rows = sheet.iterator();
 
             List<MahasiswaEntity> tutorials = new ArrayList<MahasiswaEntity>();
