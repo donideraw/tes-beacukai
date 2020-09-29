@@ -22,7 +22,11 @@ public class ExcelService {
     public void save(MultipartFile file) {
         try {
             List<MahasiswaEntity> tutorials = ExcelHelper.excelToTutorials(file.getInputStream());
-            repository.saveAll(tutorials);
+            for (int i = 0; i< tutorials.size(); i++) {
+                repository.save(tutorials.get(i));
+            }
+
+//            repository.saveAll(tutorials);
         } catch (IOException e) {
             throw new RuntimeException("fail to store excel data: " + e.getMessage());
         }

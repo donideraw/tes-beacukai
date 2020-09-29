@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name="tabel_mahasiswa")
 public class MahasiswaEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_mahasiswa")
     private Double idMahasiswa;
 
