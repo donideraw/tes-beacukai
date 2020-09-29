@@ -18,7 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class ExcelHelper {
     public static String TYPE = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-    static String[] HEADERs = { "Nama", "Alamat" };
+    static String[] HEADERs = { "Id", "Nama", "Alamat" };
     static String SHEET = "Tutorials";
 
     public static boolean hasExcelFormat(MultipartFile file) {
@@ -58,9 +58,9 @@ public class ExcelHelper {
                     Cell currentCell = cellsInRow.next();
 
                     switch (cellIdx) {
-//                        case 0:
-//                            tutorial.setIdMahasiswa(currentCell.getNumericCellValue());
-//                            break;
+                        case 0:
+                            tutorial.setIdMahasiswa(currentCell.getNumericCellValue());
+                            break;
 
                         case 1:
                             tutorial.setNamaMahasiswa(currentCell.getStringCellValue());

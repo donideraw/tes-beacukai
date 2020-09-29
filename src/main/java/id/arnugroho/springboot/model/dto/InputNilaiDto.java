@@ -3,7 +3,7 @@ package id.arnugroho.springboot.model.dto;
 public class InputNilaiDto {
     private Integer idNilai;
     private Integer idMataKuliah;
-    private Integer idMahasiswa;
+    private Double idMahasiswa;
     private Integer nilai;
     private String keterangan;
 
@@ -23,11 +23,11 @@ public class InputNilaiDto {
         this.idMataKuliah = idMataKuliah;
     }
 
-    public Integer getIdMahasiswa() {
+    public Double getIdMahasiswa() {
         return idMahasiswa;
     }
 
-    public void setIdMahasiswa(Integer idMahasiswa) {
+    public void setIdMahasiswa(Double idMahasiswa) {
         this.idMahasiswa = idMahasiswa;
     }
 

@@ -1,16 +1,16 @@
 package id.arnugroho.springboot.model.dto;
 
 public class GetDataDto {
-    private Integer idMahasiswa;
+    private Double idMahasiswa;
     private String namaMahasiswa;
     private String namaMataKuliah;
     private Integer nilai;
 
-    public Integer getIdMahasiswa() {
+    public Double getIdMahasiswa() {
         return idMahasiswa;
     }
 
-    public void setIdMahasiswa(Integer idMahasiswa) {
+    public void setIdMahasiswa(Double idMahasiswa) {
         this.idMahasiswa = idMahasiswa;
     }
 

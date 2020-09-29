@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MahasiswaRepository extends JpaRepository<MahasiswaEntity, Integer> {
+public interface MahasiswaRepository extends JpaRepository<MahasiswaEntity, Double> {
     @Query(value="select nama_mahasiswa from tabel_mahasiswa where id_mahasiswa = ?", nativeQuery = true)
-    String FindNamaMahasiswaByIdMahasiswa (Integer idMahasiswa);
+    String FindNamaMahasiswaByIdMahasiswa (Double idMahasiswa);
 }

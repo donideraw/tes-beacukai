@@ -8,7 +8,7 @@ public class MahasiswaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_mahasiswa")
-    private Integer idMahasiswa;
+    private Double idMahasiswa;
 
     @Column(name="nama_mahasiswa")
     private String namaMahasiswa;
@@ -16,11 +16,11 @@ public class MahasiswaEntity {
     @Column(name="alamat_mahasiswa")
     private String alamatMahasiswa;
 
-    public Integer getIdMahasiswa() {
+    public Double getIdMahasiswa() {
         return idMahasiswa;
     }
 
-    public void setIdMahasiswa(Integer idMahasiswa) {
+    public void setIdMahasiswa(Double idMahasiswa) {
         this.idMahasiswa = idMahasiswa;
     }
 
